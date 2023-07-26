@@ -1,9 +1,11 @@
-package org.example;
+package org.example.modelos;
+
+import org.example.modelos.Animal;
 
 public class Familia {
 
-    Animal papa="Dinosaurin";
-    Animal mama="Tiburosin";
+    Animal papa;
+    Animal mama;
     Animal hijo;
 
     public Familia(Animal papa, Animal mama) {
@@ -11,14 +13,14 @@ public class Familia {
         this.mama = mama;
     }
 
-    public  imprimirFamilia(){
+    public void imprimirFamilia(){
 
         //Este metodo muestra los nombres de los integrantes de la familia
-        system.out.println(
+        System.out.println(
                 "El papá es: "+this.papa.nombre+
                         "\nLa mamá es: "+this.mama.nombre+
                             "\nEl hijo es: "+this.hijo.nombre
-        )
+        );
 
     }
 
@@ -26,16 +28,16 @@ public class Familia {
 
         if(this.papa.pareja!=null){
 
-            Animal hijo= new Animal();
-            hijo.nombre=nombre;
-            hijo.peso=1;
+            Animal hijo1= new Animal();
+            hijo1.nombre=nombre;
+            hijo1.peso=1.0;
             double random = Math.random();
             if(random<0.5){
-                hijo.genero="F";
+                hijo1.genero="F";
             }else{
-                hijo.genero="M";
+                hijo1.genero="M";
             }
-            this.hijo=hijo;
+            this.hijo=hijo1;
 
         }else{
             System.out.println("Aun no puedes tener hijos");
