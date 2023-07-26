@@ -14,7 +14,7 @@ public class Main {
 
         Animal animal2 = new Animal();
         animal2.nombre="Caballo";
-        animal2.genero="M";
+        //animal2.genero="M";
 
 
         animal2.encontrarPareja(animal1); //Un animal consigue pareja
